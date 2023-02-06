@@ -60,7 +60,7 @@
     width: 100%;
     text-align: center;
     padding: 12px 0px;
-    background-color: #011640;
+    background-color: #041330;
     border: none;
     color: white;
     font-size: 13px;
@@ -71,7 +71,7 @@
 #login-with-fb{
     height: 40px;
     width: 100%;
-    background-color: #1877F2;
+    background-color: #5397f0;
     color: white;
     display: flex;
     align-items: center;
