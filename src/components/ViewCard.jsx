@@ -24,11 +24,12 @@ function ViewCard () {
     <NavBar />
     <Filter />
       <div className='U-full'>
-      <div className='left-text'>
-      <div><button className='for-sale'>FOR SALE</button></div>
-        <h3>8052 Camino De Arriba<span className='right-text'>$4,980,000</span></h3>
-        <p>Rancho Santa Fe, CA 92067<span className='right-text'>Est. Payment $28,492/mo</span></p>
-      </div>
+      <button className='for-sale'>FOR SALE</button>
+      
+      
+        <div className='size-De'>8052 Camino De Arriba <span className='right-text0'>$4,980,000</span></div>
+        <div className='size-santa'>Rancho Santa Fe, CA 92067<span className='right-text'>Est. Payment $28,492/mo</span></div>
+      
       
        </div>
     <div className='ViewCard-cOntainer'>
@@ -81,7 +82,7 @@ function ViewCard () {
           <div className='text-line7'>
           <span className='text8'>MLS #</span> <span className='text-num8'>220007703</span>
           </div>
-          <div className='long-text'>Nestled in the exclusive, guard-gated community of Cielo in Rancho Santa Fe, this extraordinary custom-built estate offers panoramic views encompassing mountain, ocean & city light vistas. Drive up to the home with a private, elegant driveway showcasing gorgeous landscape, front yard lawn & expansive motor court. Enjoy a bright open airy floor plan from the moment you walk in the front door. With soaring ceilings & an abundance of natural light, this single-level masterpiece offers an ideal floor plan with not a single step in the whole house! On one wing of the house, you will find the master bedroom suite, stunning movie theater, beautiful office & powder bathroom. On the other wing, you will find 3 spacious en-
+          <div className='long-text'>Nestled in the exclusive, guard-gated community of Cielo in Rancho Santa Fe, this extraordinary custom-built estate offers panoramic views encompassing mountain, ocean & city light vistas. Drive up to the home with a private, elegant driveway showcasing gorgeous landscape, front yard lawn & expansive motor court. Enjoy a bright open airy floor plan from the moment you walk in the front door. With soaring ceilings & an abundance of natural light, this single-level masterpiece offers <span className='grey-text'>an ideal floor plan with not a single step in the whole house! On one wing of the house, you will find the master bedroom suite, stunning movie theater, beautiful office & powder bathroom. On the other wing, you will find 3 spacious en-</span>
 </div>
 <button className='read-more'>READ MORE</button>
           </div>

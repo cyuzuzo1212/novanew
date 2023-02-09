@@ -353,6 +353,7 @@ a.active::before {
 }
 .card-Contain{
   flex-direction: column;
+  margin-right: 12px;
 
 }
 
@@ -375,6 +376,7 @@ a.active::before {
 margin-top: 20px;
   min-height: 5vh;
   width: 450px;
+
   height: 320px;
   border: 1px solid rgba(183, 183, 183, 0.29);
   transition: all 0.3s ease;
@@ -383,25 +385,25 @@ margin-top: 20px;
 }
 
 .left-cards {
-  padding: 10px;
+  padding: 15px;
   width: 350px;
-  
+  padding-left: 20px;
   grid-template-rows: 1fr 1fr;
   gap: 10px;
  float: right;
   
 }
 .U-full {
-  width: 93%;
+  width: 92.3%;
  justify-content: flex-end;
  border-top: 1px solid grey;
  border-left: 1px solid grey;
  border-right: 1px solid grey;
  border-radius: 5px;
- margin-left: 50px;
+ margin-left: 51px;
  margin-right: 50px;
 
- height: 160px;
+ height: 180px;
 }
 .all-flex{
   display: flex;
@@ -418,6 +420,9 @@ margin-top: 20px;
   
   
 }
+.grey-text{
+  color: gray;
+}
 .text-num1,.text-num2,.text-num3,.text-num4,.text-num5,.text-num6,.text-num7,.text-num8 {
     float: right;
 }
@@ -431,16 +436,45 @@ margin-top: 20px;
   margin-bottom: 10px;
 }
 .for-sale{
-  margin-left: 1130px;
+  margin-left: 1270px;
   margin-top: 20px;
-}
-.right-text{
-  margin-left: 900px;
-}
-.left-text{
-  padding-left: 30px;
+  background-color: #070f3d;
+  color: white;
+  padding: 5px;
+  border-radius: 4px;
+  border-color: gray;
 }
 
+  
+  
+  
+
+.size-santa{
+  font-size: 20px;
+  padding-left: 30px;
+  color: #49494d;
+  font-family: 'Courier New', Courier, monospace;
+  padding-bottom: 50px;
+  
+  
+  
+  
+  
+}
+.size-De{
+  color: #686975;
+  font-size: 40px;
+  padding-left: 20px;
+  font-style: oblique;
+  font-weight: 250;
+}
+.right-text0{
+  padding-left: 648px;
+}
+.right-text{
+  padding-left: 754px;
+  cursor: pointer;
+}
   
 
 
