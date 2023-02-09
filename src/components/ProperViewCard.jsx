@@ -1,7 +1,7 @@
 import { HiOutlineHome } from 'react-icons/hi'
 import { BsCalendar, BsSuitHeart } from 'react-icons/bs'
 import { AiOutlinePlusSquare } from 'react-icons/ai'
-export const PropertyCard = ({ price,bed,bath,square,img,newl }) => {
+export const ProperViewCard = ({ price,bed,bath,square,img,newl }) => {
     return (
         <div className='property-container'>
             <div className='top-img' style={{

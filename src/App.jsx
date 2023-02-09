@@ -5,7 +5,7 @@ import NavBar from './components/NabBar'
 import Home from './screens/Home'
 import Blog from './screens/Blog'
 import Products from './screens/Products'
-import LoginForm from './screens/LoginForm'
+//import LoginForm from './screens/LoginForm'
 
 // import About from './screens/About'
 import ReactDOM from "react-dom/client";
@@ -16,6 +16,10 @@ import {
 import Mls from './screens/Mls'
 import { News } from './screens/News'
 import NewsMore from './screens/NewsMore'
+import Community from './screens/Communities'
+import Communities from './screens/Communities'
+import ViewCard from './components/ViewCard'
+
 
   
 const router = createBrowserRouter([
@@ -37,11 +41,18 @@ const router = createBrowserRouter([
     path: "/readmore",
     element: <NewsMore />
   },
-  {
+ /* {
     path: "/login",
     element: <LoginForm />
+  },*/
+  {
+    path: "/communities",
+    element: <Communities />
   },
- 
+  {
+    path: "/view",
+    element: <ViewCard/>
+  },
 
 ]);
 

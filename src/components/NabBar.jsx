@@ -14,7 +14,7 @@ export default function NavBar() {
                 <ul className='nav-links'>
                     <li><NavLink to={'/'} > Our properties</NavLink></li>
                     <li><NavLink to={'/mls'} >  MLS Search</NavLink></li>
-                    <li><NavLink to={'/contact'} > Communities</NavLink></li>
+                    <li><NavLink to={'/communities'} > Communities</NavLink></li>
                     <li><NavLink to={'/news'} >  News</NavLink></li>
                     <li><NavLink to={'/Services'} >  Services</NavLink></li>
                     <li><NavLink to={'/contact'} >  About Blair</NavLink></li>

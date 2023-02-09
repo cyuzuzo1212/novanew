@@ -172,6 +172,13 @@ a.active::before {
   min-height: 90vh;
   padding: 20px;
 }
+.banner-comm{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+  padding: 20px;
+}
 
 .banner-item {
   display: flex;
@@ -188,8 +195,20 @@ a.active::before {
   color: rgb(34, 34, 34);
   text-align: center;
 }
+.banner-comm-item h2 {
+  font-size: 3rem;
+  font-weight: 200;
+  color: rgb(34, 34, 34);
+  text-align: center;
+}
 
 .banner-item h5 {
+  font-size: 1.5rem;
+  font-weight: 200;
+  color: rgb(34, 34, 34);
+  text-align: center;
+}
+.banner-comm-item h6 {
   font-size: 1.5rem;
   font-weight: 200;
   color: rgb(34, 34, 34);
@@ -201,6 +220,13 @@ a.active::before {
   font-weight: 200;
   color: rgb(34, 34, 34);
   text-align: left;
+}
+.banner-comm-item p {
+  font-size: 1.2rem;
+  font-weight: 200;
+  color: rgb(34, 34, 34);
+  text-align: left;
+  padding-left: 300px;
 }
 
 /* Properties */
@@ -266,6 +292,10 @@ a.active::before {
   justify-content: center;
   align-items: center;
 }
+.view{
+  margin-left: 250px;
+  
+}
 
 
 
@@ -297,9 +327,121 @@ a.active::before {
   gap: 10px;
 }
 
+/*ViewCard*/
+.ViewCard-cOntainer {
+  
+  justify-content: space-between;
+
+ margin-top: -200px;
+  margin-left: 50px;
+  margin-right: 50px;
+
+  
+}
+.img-view-container {
+  
+ 
+
+  min-height: 5vh;
+  width: 65%;
+  height: 663px;
+  border: 1px solid rgba(183, 183, 183, 0.29);
+  transition: all 0.3s ease;
+  background-image: url('https://d37ukvrrv3in12.cloudfront.net/listings/2f0059e5-0c4c-4ba0-89e9-31ca11a107eb/xl/0.jpg');
+  margin-top: 200px;
+  cursor: pointer;
+}
+.card-Contain{
+  flex-direction: column;
+
+}
+
+.img-view-contain {
+  
 
 
+  min-height: 5vh;
+  width: 450px;
+  height: 320px;
+  border: 1px solid rgba(183, 183, 183, 0.29);
+  transition: all 0.3s ease;
+  background-image: url('https://d37ukvrrv3in12.cloudfront.net/listings/2f0059e5-0c4c-4ba0-89e9-31ca11a107eb/xl/0.jpg');
+  margin-top: 200px;
+  cursor: pointer;
+}
+.img-view-contain2 {
+  
 
+margin-top: 20px;
+  min-height: 5vh;
+  width: 450px;
+  height: 320px;
+  border: 1px solid rgba(183, 183, 183, 0.29);
+  transition: all 0.3s ease;
+  background-image: url('https://d37ukvrrv3in12.cloudfront.net/listings/2f0059e5-0c4c-4ba0-89e9-31ca11a107eb/xl/0.jpg');
+  cursor: pointer;
+}
+
+.left-cards {
+  padding: 10px;
+  width: 350px;
+  
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+ float: right;
+  
+}
+.U-full {
+  width: 93%;
+ justify-content: flex-end;
+ border-top: 1px solid grey;
+ border-left: 1px solid grey;
+ border-right: 1px solid grey;
+ border-radius: 5px;
+ margin-left: 50px;
+ margin-right: 50px;
+
+ height: 160px;
+}
+.all-flex{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+/*text-block*/
+.text-block{
+  border: 1px solid gray;
+  margin-right: 380px;
+  padding: 10px;
+  margin-top: 20px;
+  
+  
+}
+.text-num1,.text-num2,.text-num3,.text-num4,.text-num5,.text-num6,.text-num7,.text-num8 {
+    float: right;
+}
+.long-text{
+  padding-top: 200px;
+}
+.read-more{
+  margin-left: 400px;
+  margin-top: 20px;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.for-sale{
+  margin-left: 1130px;
+  margin-top: 20px;
+}
+.right-text{
+  margin-left: 900px;
+}
+.left-text{
+  padding-left: 30px;
+}
+
+  
 
 
 
