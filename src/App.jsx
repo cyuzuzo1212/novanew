@@ -1,24 +1,20 @@
 
-import './App.css'
-import NavBar from './components/NabBar'
-// import { Routes, Route } from 'react-router-dom'
-import Home from './screens/Home'
-import Blog from './screens/Blog'
-import Products from './screens/Products'
-//import LoginForm from './screens/LoginForm'
-
-// import About from './screens/About'
+import './App.css';
+import NavBar from './components/NabBar';
+// import { Routes, Route } from 'react-router-dom';
+import Home from './screens/Home';
+import Blog from './screens/Blog';
+import Products from './screens/Products';
 import ReactDOM from "react-dom/client";
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
-import Mls from './screens/Mls'
-import { News } from './screens/News'
-import NewsMore from './screens/NewsMore'
-import Community from './screens/Communities'
-import Communities from './screens/Communities'
-import ViewCard from './components/ViewCard'
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Mls from './screens/Mls';
+import { News } from './screens/News';
+import NewsMore from './screens/NewsMore';
+import Community from './screens/Communities';
+import Communities from './screens/Communities';
+import ViewCard from './components/ViewCard';
+import { Dashboard } from './layout.jsx/dashboard';
+
 
 
   
@@ -26,6 +22,10 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
+  },
+  {
+    path: "/dashboard",
+    element: <Dashboard />,
   },
 
   {
@@ -41,10 +41,7 @@ const router = createBrowserRouter([
     path: "/readmore",
     element: <NewsMore />
   },
- /* {
-    path: "/login",
-    element: <LoginForm />
-  },*/
+ 
   {
     path: "/communities",
     element: <Communities />
@@ -53,20 +50,15 @@ const router = createBrowserRouter([
     path: "/view",
     element: <ViewCard/>
   },
+  // {
+  //   path: "/login",
+  //   element: <CreatForm open={open} onClick={()=> setOpen(true)}/>
+  // },
 
 ]);
 
 function App() {
-  return (
-
-
-    <RouterProvider router={router}>
-     
-  
-      
-    </RouterProvider> 
-
-  )
+  return <RouterProvider router={router}></RouterProvider>;
 }
  
 

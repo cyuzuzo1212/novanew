@@ -2,7 +2,7 @@ import React from 'react'
 import { CiUser } from 'react-icons/ci';
 import { NavLink } from 'react-router-dom';
 import '../App.css';
-import { Popup } from "../screens/creat";
+//import { Popup } from "../screens/creat";
 
 export default function NavBar() {
     return (

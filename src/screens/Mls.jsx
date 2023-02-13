@@ -3,7 +3,7 @@ import { PropertyCard } from '../components/PropertyCard'
 
 import { Filter } from '../components/filter'
 import NavBar from '../components/NabBar'
-import {Popup} from './creat';
+import {Popup }from './creat';
 
 
 function Mls() {
