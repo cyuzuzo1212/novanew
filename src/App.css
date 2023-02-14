@@ -871,5 +871,357 @@ hr{
   }
 }
 
-/* card */
+/* dashbaord */
 
+
+
+.executiveHouseBody__container{
+  width: 100%;
+  padding: 40px;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgb(254,205,165) 0%;
+  align-items: center;
+  margin: auto;
+  margin-top: 60px;
+}
+.left__body,.right__body{
+  width: 100%;
+  font-family: var(--primary-font);
+  color: var(--black-color);
+
+}
+.left__body>h1{
+  font-size: 18px;
+  font-weight: 200;
+}
+.left__body>p{
+  font-size: 40px;
+  font-weight: 300;
+  letter-spacing: 5px;
+
+}
+.parent{
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      width: 1020px;
+      margin-left: 100px;
+      height: 750px;
+
+}
+
+.propertyHeader{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid grey;
+}
+.leftHeader{
+  margin-top: 40px;
+  margin-left: 20px;
+}
+.leftParagraphUp{
+font-family:"Montserrat";
+font-size: 2.1875em;
+font-weight:  300 !important;
+text-transform: capitalize !important;;
+line-height: 1.25em;
+color:grey;
+font-style: inherit;
+vertical-align: baseline;
+white-space: normal;
+background: transparent;
+}
+.leftParagraphDown{
+
+
+  font-size: 15px;
+  background: transparent;
+  margin-top: -25px;
+  color: grey;
+}
+
+.rightHeader{
+  margin-top: 20px;
+  margin-right: 15px;
+
+}
+.rightParagraphUp{
+
+  font-family:"Montserrat";
+  font-size: 2.1875em;
+  font-weight:  300 !important;
+  text-transform: capitalize !important;;
+  color:grey;
+
+
+}
+.rightParagraphDown{
+  font-size: 15px;
+  background: transparent;
+  margin-top: -32px;
+  color: grey;
+  margin-left: -12px;
+}
+.co {
+  object-fit: cover;
+}
+
+.propertyCover {
+  object-fit: cover;
+  width: 615px;
+  height: 620px;
+}
+
+.sideUp {
+  width: 380px;
+  height: 300px;
+
+}
+
+.sideDown {
+  height: 300px;
+  width: 380px;
+  margin-top: 20px;
+
+
+}
+
+.propertyImage {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.iconLink {
+
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.linkDesription {
+  margin-left: 10px;
+
+}
+
+.dashLinkContainer {
+
+  display: flex;
+  flex-direction: row;
+  width: 200px;
+  transition-delay: 0.1s;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+  cursor: pointer;
+
+
+
+}
+
+.dashLinkContainer:hover {
+  width: 270px;
+  transform: scale(1.1);
+  border-right: 20px solid dodgerblue;
+  outline: none;
+  text-align: center;
+
+}
+
+.dashLinkContainer:active {
+  border-right: 20px solid dodgerblue;
+
+}
+
+.dashboardContainer {
+
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.dashFixedNav {
+  
+  overflow: auto;
+  width: 20%;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  border-right: 1px solid grey;
+}
+
+
+
+.addblogsForm label {
+  display: block;
+  font-size: 15px;
+  color: rgb(132, 171, 210);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.estateLocation {
+
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  justify-content: space-between;
+
+}
+
+.estateDetails {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  margin-left: 20px;
+
+
+}
+
+.locationSection {
+  width: 70%;
+  background: white;
+  margin-top: 70px;
+  height: 300px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-top: 10px;
+  margin-left: 200px;
+  transition-delay: 0.1s;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-in-out;
+}
+
+.locationSection:hover {
+  transform: scale(1.1);
+  border-right: 30px solid dodgerblue;
+
+}
+
+.basicInfo {
+  font-size: 15px;
+  text-align: center;
+  color: dodgerblue;
+}
+
+.addblogsForm input {
+  background: #e9f3f7;
+  border: 1px solid grey;
+  width: 250px;
+  height: 40px;
+}
+
+.locationSection.details {
+  height: 390px;
+}
+
+.cloudUp {
+  font-size: 100px;
+  font-weight: bold;
+  color: dodgerblue;
+  margin-left: 45%;
+}
+
+.fileEstate {
+  margin-left: 35%;
+
+}
+
+.addblogsForm input {
+  color: rgb(45, 41, 41);
+  text-align: center;
+
+}
+
+.addblogsForm input:focus {
+  outline: none;
+  border: none;
+  background: dodgerblue;
+  color: white;
+  text-align: center;
+
+}
+
+.detailsContainer {
+  background: white;
+  width: 500px;
+  width: 1020px;
+  height: auto;
+  overflow: auto;
+  margin-left: 100px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+  margin-top: 20px;
+
+}
+
+.detailsGrid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px;
+  /* background: #011640; */
+
+}
+
+.detailsStyles {
+  font-size: 14px;
+  color: grey;
+  background: transparent;
+
+}
+
+.loading-spinner {
+  border: 4px solid #f3f3f3;
+  /* Light grey */
+  border-top: 4px solid #3498db;
+  /* Blue */
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  animation: spin 1s linear infinite;
+  margin-top: 320px;
+  margin-left: 500px;
+}
+
+@keyframes spin {
+  0% {
+      transform: rotate(0deg);
+  }
+
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+.fetching {
+
+  margin-top: 80px;
+  margin-left: 300px;
+  text-align: center;
+  font-size: 50px;
+  color: dodgerblue;
+
+
+}
+
+.display-4 {
+
+  margin: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  color: dodgerblue;
+  text-align: center;
+  font-weight: bold;
+}
+/*blocks*/
+.block1{
+  border: 1px solid gray;
+  background : url('https://cdn.pixabay.com/photo/2014/02/27/16/10/flowers-276014__340.jpg');
+  margin-top: 200px;
+  margin-left: 80px;
+  margin-right: 300px;
+  height: 600px;
+  text-align: left;
+  
+}

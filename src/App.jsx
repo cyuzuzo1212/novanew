@@ -13,8 +13,7 @@ import NewsMore from './screens/NewsMore';
 import Community from './screens/Communities';
 import Communities from './screens/Communities';
 import ViewCard from './components/ViewCard';
-import { Dashboard } from './layout.jsx/dashboard';
-
+import Admin from './screens/Admin';
 
 
   
@@ -25,7 +24,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/dashboard",
-    element: <Dashboard />,
+    element: <Admin />,
   },
 
   {
