@@ -1,6 +1,6 @@
 import React from 'react'
 import NavBar from '../components/NabBar'
-import { Filter } from '../components/filter'
+import { Filter } from '../components/Filter'
 
 function Communities () {
     return(

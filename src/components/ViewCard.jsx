@@ -1,6 +1,6 @@
 import React from 'react'
 import { ProperViewCard } from '../components/ProperViewCard'
-import { Filter } from '../components/filter'
+import { Filter } from '../components/Filter'
 import NavBar from '../components/NabBar'
 
 

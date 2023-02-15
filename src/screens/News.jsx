@@ -1,7 +1,7 @@
 import React from 'react'
 
 import NavBar from "../components/NabBar";
-import { Filter } from '../components/filter';
+import { Filter } from '../components/Filter';
 import { NewsCard } from '../components/NewsCard';
 import {Popup} from './creat';
 

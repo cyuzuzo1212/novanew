@@ -1,5 +1,5 @@
 import React from "react";
-import { Filter } from "../components/filter";
+import { Filter } from "../components/Filter";
 import NavBar from "../components/NabBar";
 import { FaFacebookF } from "react-icons/fa";
 import { IoLogoTwitter } from "react-icons/io";

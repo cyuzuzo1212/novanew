@@ -3,7 +3,7 @@ import NavBar from '../components/NabBar'
 import {Popup} from './creat';
 
 import { PropertyCard } from '../components/PropertyCard'
-import { Filter } from '../components/filter';
+import { Filter } from '../components/Filter';
 function Home() {
   const data = [
     {
