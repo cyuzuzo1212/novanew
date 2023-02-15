@@ -17,7 +17,6 @@ import {AddNew }from "./Components/addNew/addNew";
 import Admin from './screens/Admin';
 import SmallCard from './layout/smallCard';
 import { Route,Routes } from "react-router-dom";
-import { Dashboard } from "@material-ui/icons";
 import Board from './layout/board';
 import Card from './components/Card';
 
