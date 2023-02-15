@@ -58,21 +58,23 @@
   
   .searchContainer {
     position: relative;
-    
+    margin-left: -200px;
+    margin-bottom: -50px;
     
   }
   
   .searchContainer svg {
     position: absolute;
     top: 19%;
-    left: 30px;
-    font-size: 20px;
+    left: 10px;
+    font-size: 15px;
   }
   
   .searchContainer input {
     border-radius: 1000px;
-    padding-left: 70px;
-    
+    padding-left: 30px;
+  
+  
     
   }
   

@@ -21,7 +21,7 @@ export const Popup=() => {
 
   useEffect(() => {
     if (isLoggedIn ) {
-      navigate("/dashboard");
+      navigate("/dashboard/board");
     }
   }, [isLoggedIn]);
 

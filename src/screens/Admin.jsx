@@ -2,7 +2,6 @@ import Sidebar from "../layout/Sidebar";
 import Topbar from "../layout/Topbar";
 import React from "react";
 import { Route, Routes,Outlet ,NavLink } from "react-router-dom";
-import AddNew from "../components/addNew/addNew";
 
 function Admin() {
   return (

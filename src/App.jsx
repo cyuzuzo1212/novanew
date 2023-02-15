@@ -13,7 +13,7 @@ import NewsMore from './screens/NewsMore';
 import Community from './screens/Communities';
 import Communities from './screens/Communities';
 import ViewCard from './components/ViewCard';
-import AddNew from "./Components/addNew/addNew";
+import {AddNew }from "./Components/addNew/addNew";
 import Admin from './screens/Admin';
 import SmallCard from './layout/smallCard';
 import { Route,Routes } from "react-router-dom";
