@@ -15,7 +15,7 @@ function addNew() {
         <li>Widgets</li>
       </ul>
 
-      <div class="card w-100">
+      <div class="card-add w-100">
         <div class="card-header">
           <FaInfo className="text-primary" />
           <span>Basic Informations</span>

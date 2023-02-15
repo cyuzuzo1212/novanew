@@ -1,18 +1,17 @@
 import Sidebar from "../layout/Sidebar";
 import Topbar from "../layout/Topbar";
 import React from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes,Outlet ,NavLink } from "react-router-dom";
 import AddNew from "../components/addNew/addNew";
 
 function Admin() {
   return (
     <div>
       <Topbar />
-      <div className="container-fluid d-flex">
-        <Sidebar />
-        <Routes>
-          <Route exact path="/" element={<AddNew />} />
-        </Routes>
+      <Sidebar />
+      <div className="container-fluid d-flex" style={{width:"80%",marginLeft:"20%",marginTop:"-700px"}}>
+        
+        <Outlet/>
 
       </div>
     </div>

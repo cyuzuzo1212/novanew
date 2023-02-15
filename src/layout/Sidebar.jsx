@@ -1,75 +1,92 @@
 import "./Sidebar.css";
+import { NavLink } from "react-router-dom";
 import {
-  LineStyle,
-  Timeline,
-  TrendingUp,
-  PermIdentity,
-  Storefront,
-  AttachMoney,
-  BarChart,
-  MailOutline,
-  DynamicFeed,
-  ChatBubbleOutline,
-  WorkOutline,
-  Report,
-} from "@material-ui/icons";
-import { Link } from "react-router-dom";
-
+  FiTrendingUp,
+  FiCalendar,
+  FiFilePlus,
+  FiList,
+  FiMail,
+  FiMessageSquare,
+  FiPlus,
+  FiUserPlus,
+  FiUsers,
+} from "react-icons/fi";
 export default function Sidebar() {
   return (
     <div className="sidebar">
       <div className="sidebarWrapper">
         <div className="sidebarMenu">
-          <h3 className="sidebarTitle">MAIN</h3>
+          <h3 className="sidebarTitle">Main</h3>
           <ul className="sidebarList">
             <li className="sidebarListItem active">
-              <LineStyle className="sidebarIcon" />
-                Dashboard
-            </li>
-            <li className="sidebarListItem border-bottom">
-              <Timeline className="sidebarIcon" />
-              Edit profile
-            </li>
-            <li className="sidebarListItem border-bottom">
-              <TrendingUp className="sidebarIcon" />
-              Messages
-            </li>
-          
+              <NavLink to={"/dashboard/board"} className="py-0">
 
-          <li className="sidebarListItem border-bottom">
-              <TrendingUp className="sidebarIcon" />
-              Agents List
+              <FiTrendingUp className="sidebarIcon" />
+              Dashboard
+              </NavLink>
+            </li>
+            
+            <li className="sidebarListItem border-bottom">
+            <NavLink>
+              <FiUserPlus className="sidebarIcon" />
+              Edit Profile
+              </NavLink>
+            </li>
+            
+            <li className="sidebarListItem border-bottom">
+              <NavLink>
+              <FiMail className="sidebarIcon" />
+              Messages
+              <span> 3 </span>
+              </NavLink>
             </li>
             <li className="sidebarListItem border-bottom">
-              <TrendingUp className="sidebarIcon" />
+              <NavLink>
+              <FiUsers className="sidebarIcon" />
+              Agents List
+              </NavLink>
+            </li>
+            <li className="sidebarListItem border-bottom">
+              <NavLink>
+              <FiPlus className="sidebarIcon" />
               Submenu
+              </NavLink>
             </li>
           </ul>
         </div>
         <div className="sidebarMenu">
-          <h3 className="sidebarTitle">LISTINGS</h3>
+          <h3 className="sidebarTitle">Listings</h3>
           <ul className="sidebarList">
             <li className="sidebarListItem border-bottom">
-              <PermIdentity className="sidebarIcon" />
-              My Listings
+              
+              <NavLink to={"/dashboard/listing"}>
+              <FiList className="sidebarIcon" />
+              My listings
+              </NavLink>
             </li>
             <li className="sidebarListItem border-bottom">
-              <Link to={"/"} className="py-0">
-                <Storefront className="sidebarIcon" />
-                Bookings
-              </Link>
+              <NavLink>
+              <FiCalendar className="sidebarIcon" />
+              Bookings
+              </NavLink>
             </li>
             <li className="sidebarListItem border-bottom">
-              <AttachMoney className="sidebarIcon" />
+              <NavLink>
+              <FiMessageSquare className="sidebarIcon" />
               Reviews
+              <span>2</span>
+              </NavLink>
             </li>
+            
             <li className="sidebarListItem border-bottom">
-              <BarChart className="sidebarIcon" />
-              Add News
+            <NavLink to={"/dashboard/addNew"} className="py-0"> 
+              <FiFilePlus className="sidebarIcon" />
+              Add New
+              </NavLink>
             </li>
+           
           </ul>
         </div>
-
       </div>
     </div>
   );

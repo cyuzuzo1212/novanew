@@ -27,12 +27,27 @@
 }
 
 .sidebarListItem {
-  padding: 5px;
+  padding: 0px;
   cursor: pointer;
   display: flex;
   align-items: center;
-  border-radius: 10px;
+  border-radius: 5px;
+  font-size: smaller;
+  color: gray;
+ 
 }
+.sidebarListItem span{
+  color:white;
+  background-color: #3270FC;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 8px;
+  border-radius: 5px;
+}
+.sidebarListItem Link{
+  color:black
+}
+
 
 .sidebarListItem.active,
 .sidebarListItem:hover {
@@ -41,5 +56,7 @@
 
 .sidebarIcon{
     margin-right: 5px;
-    font-size: 20px !important;
+    font-size: 15px !important;
+    color: #3270FC;
 }
+
