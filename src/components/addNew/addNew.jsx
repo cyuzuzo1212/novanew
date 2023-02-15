@@ -8,19 +8,33 @@ import { useDispatch } from "react-redux";
 import { createList } from "./creatSlice";
 
 export const AddNew = () => {
-  const [listingTitle, setlistingTitle] = useState("");
-  const [listingAddress, setlistingAddress] = useState("");
+  const [listingDesc, setlistingDesc] = useState("");
+  const [listingBath, setlistingBath] = useState("");
   const [listingImage, setlistingImage] = useState("");
-  
+  const [listingPrice, setlistingPrice] = useState("");
+  const [listingBeds, setlistingBeds] = useState("");
+  const [listingBuilt, setlistingBuilt] = useState("");
+  const [listingSize, setlistingSize] = useState("");
+  const [listingStatus, setlistingStatus] = useState("");
+  const [listingLocation, setlistingLocation] = useState({street:'', province:'', district:''});
 
   const dispatch = useDispatch();
 
   const handlePost = (e) => {
     const data = new FormData();
-    data.append("title", listingTitle);
-    data.append("desc", listingAddress);
-    data.append("categories", "music");
-    data.append("photo", listingImage);
+    data.append("description", listingDesc);
+    data.append("location[province]", listingLocation.province);
+    data.append("location[district]", listingLocation.district);
+    data.append("location[street]", listingLocation.street);
+    data.append("price", listingPrice);
+    data.append("image", listingImage);
+    data.append("beds", listingBeds);
+    data.append("bath", listingBath);
+    data.append("yearBuilt",listingBuilt);
+    data.append("lotSize", listingSize);
+    data.append("status", listingStatus);
+
+
     e.preventDefault();
     dispatch(createList(data));
   };
@@ -48,7 +62,7 @@ export const AddNew = () => {
                 placeholder="Name Of Your Province"
                 className="credential-desc-input"
                 onChange={(event) => {
-                  setlistingTitle(event.target.value);
+                    setlistingLocation({province: event.target.value});
                 }}
               />
             </div>
@@ -62,7 +76,7 @@ export const AddNew = () => {
                 placeholder="Name Of District"
                 className="credential-desc-input"
                 onChange={(event) => {
-                  setlistingTitle(event.target.value);
+                    setlistingLocation({district: event.target.value});
                 }}
               />
             </div>
@@ -76,7 +90,7 @@ export const AddNew = () => {
                 placeholder="Bath Number"
                 className="credential-desc-input"
                 onChange={(event) => {
-                  setlistingTitle(event.target.value);
+                  setlistingBath(event.target.value);
                 }}
               />
             </div>
@@ -91,7 +105,7 @@ export const AddNew = () => {
                 placeholder="Your Status"
                 className="credential-desc-input"
                 onChange={(event) => {
-                  setlistingTitle(event.target.value);
+                  setlistingStatus(event.target.value);
                 }}
               />
             </div>
@@ -106,10 +120,10 @@ export const AddNew = () => {
               </div>
               <input
                 type={"text"}
-                placeholder="Address"
+                placeholder="Street"
                 className="credential-desc-input"
                 onChange={(event) => {
-                  setlistingAddress(event.target.value);
+                    setlistingLocation({street:event.target.value});
                 }}
               />
             </div>
@@ -123,7 +137,7 @@ export const AddNew = () => {
                 placeholder="Price of Estate"
                 className="credential-desc-input"
                 onChange={(event) => {
-                  setlistingAddress(event.target.value);
+                  setlistingPrice(event.target.value);
                 }}
               />
             </div>
@@ -137,7 +151,7 @@ export const AddNew = () => {
                 placeholder="Year Built in"
                 className="credential-desc-input"
                 onChange={(event) => {
-                  setlistingAddress(event.target.value);
+                  setlistingBuilt(event.target.value);
                 }}
               />
             </div>
@@ -151,7 +165,7 @@ export const AddNew = () => {
                 placeholder="Your Description"
                 className="credential-desc-input"
                 onChange={(event) => {
-                  setlistingAddress(event.target.value);
+                  setlistingDesc(event.target.value);
                 }}
               />
             </div>
@@ -181,7 +195,7 @@ export const AddNew = () => {
                 placeholder="Beds Number"
                 className="credential-desc-input"
                 onChange={(event) => {
-                  setlistingAddress(event.target.value);
+                  setlistingBeds(event.target.value);
                 }}
               />
             </div>
@@ -195,7 +209,7 @@ export const AddNew = () => {
                 placeholder="Lot Size"
                 className="credential-desc-input"
                 onChange={(event) => {
-                  setlistingAddress(event.target.value);
+                  setlistingSize(event.target.value);
                 }}
               />
             </div>
