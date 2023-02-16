@@ -18,7 +18,7 @@ import Admin from './screens/Admin';
 import SmallCard from './layout/smallCard';
 import { Route,Routes } from "react-router-dom";
 import Board from './layout/board';
-import Card from './components/Card';
+import {Chart} from './components/chart/chart';
 
   
 function App() {
@@ -28,6 +28,7 @@ function App() {
          <Route path="/dashboard/board" element={<Board/>}/> 
         <Route path="/dashboard/addNew" element={<AddNew/>}/>
         <Route path="/dashboard/listing" element={<SmallCard/>}/>
+        <Route path="/dashboard/chart" element={<Chart/>}/>
         </Route>
   
         <Route path="/" element={<Home />} />

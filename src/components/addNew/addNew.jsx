@@ -18,6 +18,7 @@ export const AddNew = () => {
   const [listingStatus, setlistingStatus] = useState("");
   const [listingLocation, setlistingLocation] = useState({street:'', province:'', district:''});
 
+  console.log(listingLocation, "listinfg");
   const dispatch = useDispatch();
 
   const handlePost = (e) => {
@@ -62,7 +63,7 @@ export const AddNew = () => {
                 placeholder="Name Of Your Province"
                 className="credential-desc-input"
                 onChange={(event) => {
-                    setlistingLocation({province: event.target.value});
+                    setlistingLocation({...listingLocation, province: event.target.value});
                 }}
               />
             </div>
@@ -76,7 +77,8 @@ export const AddNew = () => {
                 placeholder="Name Of District"
                 className="credential-desc-input"
                 onChange={(event) => {
-                    setlistingLocation({district: event.target.value});
+                  console.log(event);
+                    setlistingLocation({...listingLocation, district: event.target.value});
                 }}
               />
             </div>
@@ -123,7 +125,7 @@ export const AddNew = () => {
                 placeholder="Street"
                 className="credential-desc-input"
                 onChange={(event) => {
-                    setlistingLocation({street:event.target.value});
+                    setlistingLocation({...listingLocation, street:event.target.value});
                 }}
               />
             </div>

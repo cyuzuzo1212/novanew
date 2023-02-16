@@ -40,7 +40,7 @@ export const createList = (data) => (dispatch) => {
 export const getAllListings = () => (dispatch) => {
   axios({
     method: "GET",
-    url: "https://klabapi.onrender.com/api/estate",
+    url: "https://blogapi-0jru.onrender.com/api/realEstates",
   }).then((response)=>{
     console.log(response)
     dispatch(getListings(response.data))
