@@ -1,8 +1,9 @@
 #listing-card{
     display: flex;
     background-color: white;
-    width: 50%;
+    width: 30%;
     margin-right: 20px;
+    margin-bottom: 20px;
     
     
 }

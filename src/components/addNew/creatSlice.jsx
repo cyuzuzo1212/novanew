@@ -3,6 +3,7 @@ import axios from "axios";
 
 const initialState = {
   EstateCreated: false,
+  listings: [],
 };
 
 export const listSlice = createSlice({
@@ -12,6 +13,9 @@ export const listSlice = createSlice({
     list: (state) => {
       state.EstateCreated = true;
     },
+    getListings: (state, action) => {
+      state.listings = action.payload
+    }
   },
 });
 
@@ -33,5 +37,17 @@ export const createList = (data) => (dispatch) => {
   });
 };
 
-export const { list } = listSlice.actions;
+export const getAllListings = () => (dispatch) => {
+  axios({
+    method: "GET",
+    url: "https://klabapi.onrender.com/api/estate",
+  }).then((response)=>{
+    console.log(response)
+    dispatch(getListings(response.data))
+  }).then((err)=> {
+    console.log(err)
+  })
+}
+
+export const { list, getListings } = listSlice.actions;
 export default listSlice.reducer;
