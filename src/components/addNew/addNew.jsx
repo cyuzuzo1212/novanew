@@ -41,7 +41,7 @@ export const AddNew = () => {
   };
   return (
     <div>
-      <h2 style={{ marginLeft: 80, color: "#144273" }}>Add Listing</h2>
+      <h2 style={{ marginLeft: 400, color: "#144273",marginTop:"120px" }}>Add Listing</h2>
       <div id="addnew-body">
         <div id="addnew-basic-info-title">
           <FaInfo
@@ -53,7 +53,7 @@ export const AddNew = () => {
         </div>
         <div id="addnew-basic-info-mainbody">
           <div className="new-credentials-combo">
-            <div className="credential-title">Listing Title</div>
+            <div className="credential-title">Province</div>
             <div className="main-credential">
               <div className="credential-icon-input">
                 <IoBriefcaseOutline />
@@ -67,7 +67,7 @@ export const AddNew = () => {
                 }}
               />
             </div>
-
+            <div className="credential-title">District</div>
             <div className="main-credential">
               <div className="credential-icon-input">
                 <IoBriefcaseOutline />
@@ -83,6 +83,7 @@ export const AddNew = () => {
               />
             </div>
 
+            <div className="credential-title">Bath</div>
             <div className="main-credential">
               <div className="credential-icon-input">
                 <IoBriefcaseOutline />
@@ -97,7 +98,7 @@ export const AddNew = () => {
               />
             </div>
 
-
+            <div className="credential-title">Status</div>
             <div className="main-credential">
               <div className="credential-icon-input">
                 <IoBriefcaseOutline />
@@ -115,7 +116,7 @@ export const AddNew = () => {
           </div>
 
           <div className="new-credentials-combo">
-            <div className="credential-title">Address</div>
+            <div className="credential-title">Street</div>
             <div className="main-credential">
               <div className="credential-icon-input">
                 <IoLocationSharp />
@@ -130,6 +131,7 @@ export const AddNew = () => {
               />
             </div>
 
+            <div className="credential-title">Price</div>
             <div className="main-credential">
               <div className="credential-icon-input">
                 <IoLocationSharp />
@@ -144,6 +146,7 @@ export const AddNew = () => {
               />
             </div>
 
+            <div className="credential-title">Year</div>
             <div className="main-credential">
               <div className="credential-icon-input">
                 <IoLocationSharp />
@@ -158,6 +161,7 @@ export const AddNew = () => {
               />
             </div>
 
+            <div className="credential-title">Description</div>
             <div className="main-credential">
               <div className="credential-icon-input">
                 <IoLocationSharp />
@@ -176,7 +180,7 @@ export const AddNew = () => {
           </div>
 
           <div className="new-credentials-combo" id="option">
-            <div className="credential-title">Listing Title</div>
+            <div className="credential-title">Image</div>
             <div className="main-credential">
               <div className="credential-desc-option">
                 <input
@@ -188,6 +192,7 @@ export const AddNew = () => {
               </div>
             </div>
 
+            <div className="credential-title">Beds</div>
             <div className="main-credential">
               <div className="credential-icon-input">
                 <IoLocationSharp />
@@ -202,6 +207,7 @@ export const AddNew = () => {
               />
             </div>
             
+            <div className="credential-title">Lot Size</div>
             <div className="main-credential">
               <div className="credential-icon-input">
                 <IoLocationSharp />

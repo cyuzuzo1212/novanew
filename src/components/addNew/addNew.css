@@ -5,6 +5,7 @@
     margin-left: 80px;
     border: 1px solid rgba(128, 128, 128, 0.2);
     border-radius: 3px;
+    
 }
 .new-credentials-combo{
     height: fit-content;
@@ -26,6 +27,7 @@
 .credential-title{
     color: grey;
     font-size: 13px;
+    margin-top: 5px;
 }
 .main-credential{
     display: flex;
@@ -86,6 +88,7 @@
     align-items: center;
     height: 40px;
     width: 140px;
+    margin-bottom: 15px;
     border: none;
     color: white;
     background-color: #12264D;

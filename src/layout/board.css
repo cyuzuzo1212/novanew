@@ -4,6 +4,7 @@
     background-color: white;
     margin-left: 80px;
     margin-bottom: 20px;
+    margin-top: 100px;
 }
 #generaldashboard-options-list{
     display: flex;
@@ -50,20 +51,23 @@
     color: #566985;
     font-size: 16px;
     font-weight: 400;
+    
 }
 #statistic-chart{
-    /* background: url("../img/cap1.png"); */
     background-position: center;
     background-size: cover;
-    height: 300px;
+    height: 450px;
     width: 100%;
     border-radius: 3px;
     margin-top: 30px;
+    background-color: white;
+
+
 }
 #last-activities{
     width: calc(100% - 160px);
     margin-left: 80px;
-    margin-top: -200px;
+    margin-top: 100px;
     margin-bottom: 20px;
 }
 .dashboard-recent-activity{

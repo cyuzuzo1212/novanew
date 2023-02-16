@@ -77,7 +77,7 @@ export default function Topbar() {
             <span className="topIconBadge">2</span>
           </div>
           <div className="topbarIconContainer border-start mx-2">
-            <a href="#" className="btn" style={{ backgroundColor: "#3270FC" }}>
+            <a href="/dashboard/addNew" className="btn" style={{ backgroundColor: "#3270FC",padding:"10px" }}>
               <FaPlusCircle className="text-white mx-2" />
               <span className="text-white">Add Listing</span>
             </a>

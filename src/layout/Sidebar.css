@@ -1,7 +1,8 @@
 .sidebar {
+  position: fixed;
   width: 300px;
   min-height: 100%;
-  background-color: rgb(251, 251, 255);
+  background-color: white;
   position: sticky;
   top: 50px;
   
@@ -9,6 +10,7 @@
 
 .sidebarWrapper {
   padding: 20px;
+  margin-bottom: 10px;
   color: #555;
   
 }
@@ -29,20 +31,23 @@
 }
 
 .sidebarListItem {
-  padding-top: 0;
+  height: 2.6rem;
+  padding-left: 0px;
+  margin-right: -25px;
+  margin-left: -10px;
   cursor: pointer;
   display: flex;
   align-items: center;
-  border-radius: 5px;
+  border-radius: 2px;
   font-size: smaller;
   color: gray;
-  border-bottom: 1px solid gray;
-  
- 
+ border-bottom: 1px solid gray;
 }
+
 .sidebarListItem span{
   color:white;
   background-color: #3270FC;
+  height: 3rem;
   padding-left: 10px;
   padding-right: 10px;
   margin-left: 8px;
@@ -56,7 +61,7 @@
 .sidebarListItem.active,
 .sidebarListItem:hover {
   background-color: rgb(245, 245, 248);
-  border-bottom: 1px solid gray;
+  /*border-bottom: 1px solid gray;*/
   
 }
 

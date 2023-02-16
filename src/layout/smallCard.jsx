@@ -6,7 +6,6 @@ import {BsFillEyeFill} from 'react-icons/bs';
 import { getAllListings } from "../components/addNew/creatSlice";
 import { useSelector, useDispatch } from "react-redux";
 import { BsFillStarFill, BsPencil, BsTrash } from "react-icons/bs";
-import { Button } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 
 export const SmallCard = () => {
@@ -43,7 +42,7 @@ export const SmallCard = () => {
                     {/*<button style={{backgroundColor:"blue",color:"white"}}>VIEW</button>*/}
 
                     <div id="view-pop">
-                        <NavLink to={"listing-details"}>
+                        <NavLink to={'/view'}>
                             <div id="view-listing-details" onClick={()=>{
                                 localStorage.setItem("properties",JSON.stringfy(properties))
                                 localStorage.setItem("cardsarry",JSON.stringfy(array))
