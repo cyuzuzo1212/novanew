@@ -64,5 +64,18 @@ export const Delete = (id) => (dispatch) => {
   })
 }
 
+export const EditingListing  =(id, token, data) =>{
+  axios({
+    method:"PATCH",
+    url: `https://blogapi-0jru.onrender.com/api/realEstates/${id}`,
+    data: data,
+    headers:{
+      Authorization: `Bearer ${token}`
+    }
+}).then((res)=>{
+  console.log(res,"from editor");
+}).catch((err)=>{console.log(err);})
+}
+
 export const { list, getListings } = listSlice.actions;
 export default listSlice.reducer;

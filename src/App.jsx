@@ -19,6 +19,7 @@ import SmallCard from './layout/smallCard';
 import { Route,Routes } from "react-router-dom";
 import Board from './layout/board';
 import {Chart} from './components/chart/chart';
+import { EditListing } from './components/addNew/editingListing';
 
   
 function App() {
@@ -28,6 +29,7 @@ function App() {
          <Route path="/dashboard/board" element={<Board/>}/> 
         <Route path="/dashboard/addNew" element={<AddNew/>}/>
         <Route path="/dashboard/listing" element={<SmallCard/>}/>
+        <Route path='/dashboard/listing/editListing/:id' element={<EditListing />} />
         <Route path="/dashboard/chart" element={<Chart/>}/>
         </Route>
   

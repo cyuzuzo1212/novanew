@@ -8,6 +8,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { BsFillStarFill, BsPencil, BsTrash } from "react-icons/bs";
 import { NavLink } from "react-router-dom";
 import { Delete } from "../components/addNew/creatSlice";
+import { EditingListing } from "../components/addNew/creatSlice";
 
 export const SmallCard = () => {
     const dispatch = useDispatch()
@@ -72,7 +73,8 @@ export const SmallCard = () => {
                         localStorage.setItem("tobe_deletde_id",item._id)
                         dispatch(Delete(item._id));
                     }}/></div>
-              <BsPencil className="verified-edit" />
+                    <NavLink to={`editListing/${item._id}`}>
+              <BsPencil className="verified-edit" /></NavLink>
                 </div>
 
                 
