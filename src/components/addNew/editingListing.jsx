@@ -18,7 +18,7 @@ export const EditListing = () => {
   const [listingStatus, setlistingStatus] = useState("");
   const [listingLocation, setlistingLocation] = useState({street:'', province:'', district:''});
 
-  console.log(listingLocation, "listinfg");
+  console.log(listingLocation, "listinig");
   const dispatch = useDispatch();
 
   const handlePost = (e) => {

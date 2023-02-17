@@ -25,6 +25,22 @@ export const SmallCard = () => {
 
 
 <>
+<div className="warning-container" id="warning-message">
+        <div className="warning-message">
+          <p>Are You Sure You Want To Delete This Post?</p>
+          <div style={{ display: "flex", justifyContent: "center", gap: 40 }}>
+            <div className="cancel-deletion" onClick={()=>{
+                document.getElementById("warning-message").style.display = "none";
+            }}>Cancel</div>
+            <div className="approve-deletion" onClick={()=>{
+              document.getElementById("warning-message").style.display = "none";
+              dispatch(Delete());
+            }}>Delete</div>
+          </div>
+        </div>
+      </div>
+
+
 <div style={{display:"flex", flexWrap: "wrap"}}>
 
         {listings.map((item)=>{
@@ -70,8 +86,8 @@ export const SmallCard = () => {
                     <BsFillStarFill className="verified"/>
                     <BsFillStarFill/>
                     <div className="verified-delete"><BsTrash  onClick={()=>{
-                        localStorage.setItem("tobe_deletde_id",item._id)
-                        dispatch(Delete(item._id));
+                        document.getElementById("warning-message").style.display = "flex";
+                        localStorage.setItem("tobe_deleted_id",item._id)
                     }}/></div>
                     <NavLink to={`editListing/${item._id}`}>
               <BsPencil className="verified-edit" /></NavLink>

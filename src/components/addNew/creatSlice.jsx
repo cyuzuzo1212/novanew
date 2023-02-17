@@ -49,9 +49,9 @@ export const getAllListings = () => (dispatch) => {
   })
 }
 
-export const Delete = (id) => (dispatch) => {
+export const Delete = () => (dispatch) => {
   const token = (localStorage.getItem("token"));
-  console.log(id);
+  const id = (localStorage.getItem("tobe_deleted_id"))
   axios({
     method: "DELETE",
     url: `https://blogapi-0jru.onrender.com/api/realEstates/${id}`,
