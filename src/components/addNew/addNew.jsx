@@ -41,7 +41,7 @@ export const AddNew = () => {
   };
   return (
     <div>
-      <h2 style={{ marginLeft: 400, color: "#144273",marginTop:"120px" }}>Add Listing</h2>
+      <h2 style={{ marginLeft: 400, color: "#144273",marginTop:"30px" }}>Add Listing</h2>
       <div id="addnew-body">
         <div id="addnew-basic-info-title">
           <FaInfo
@@ -53,7 +53,7 @@ export const AddNew = () => {
         </div>
         <div id="addnew-basic-info-mainbody">
           <div className="new-credentials-combo">
-            <div className="credential-title">Province</div>
+            <div className="credential-title">Address (Province)</div>
             <div className="main-credential">
               <div className="credential-icon-input">
                 <IoBriefcaseOutline />
@@ -116,7 +116,7 @@ export const AddNew = () => {
           </div>
 
           <div className="new-credentials-combo">
-            <div className="credential-title">Street</div>
+            <div className="credential-title">Address (Street)</div>
             <div className="main-credential">
               <div className="credential-icon-input">
                 <IoLocationSharp />

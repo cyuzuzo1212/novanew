@@ -8,7 +8,7 @@ function Admin() {
     <div>
       <Topbar />
       <Sidebar />
-      <div className="container-fluid d-flex" style={{width:"80%",marginLeft:"20%",marginTop:"-700px"}}>
+      <div className="container-fluid d-flex" style={{width:"80%",marginLeft:"20%",marginTop:"-600px"}}>
         
         <Outlet/>
 

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import './smallCard.css';
 import {IoLocationSharp} from 'react-icons/io5';
 
@@ -7,10 +7,12 @@ import { getAllListings } from "../components/addNew/creatSlice";
 import { useSelector, useDispatch } from "react-redux";
 import { BsFillStarFill, BsPencil, BsTrash } from "react-icons/bs";
 import { NavLink } from "react-router-dom";
+import { Delete } from "../components/addNew/creatSlice";
 
 export const SmallCard = () => {
     const dispatch = useDispatch()
     const listings = useSelector((state)=>state.listings.listings)
+    const [mouseover,setMouseOver] = useState(false);
 
     useEffect(()=>{
         getAllListings()
@@ -27,11 +29,11 @@ export const SmallCard = () => {
         {listings.map((item)=>{
             return (
                 <div id="listing-card">
-            <div id="listing-card-image" onMouseOver={()=>{
-                document.getElementById("view-popup").style.display = "flex";
-            }} onMouseOut={()=>{
-                document.getElementById("view-popup").style.display ="none";
-            }} 
+            <div id="listing-card-image"
+            onMouseOver={()=>{
+                setMouseOver(true)
+            }}
+            onMouseOut={()=>{setMouseOver(false)}}
              style={{
                 background: `url(${item.image})`,
                 backgroundPosition: "center",
@@ -41,7 +43,9 @@ export const SmallCard = () => {
                 }}>
                     {/*<button style={{backgroundColor:"blue",color:"white"}}>VIEW</button>*/}
 
-                    <div id="view-pop">
+                    <div id="view-pop" style={{
+                        display: mouseover ? "flex" : "none"
+                    }}>
                         <NavLink to={'/view'}>
                             <div id="view-listing-details" onClick={()=>{
                                 localStorage.setItem("properties",JSON.stringfy(properties))
@@ -56,7 +60,7 @@ export const SmallCard = () => {
                 </div>
                 <div id="listing-card-address">
                     <IoLocationSharp style={{color:"#3270FC"}}/>
-                   {item.location.province}
+                   {item.location.province} {item.location.district} {item.location.street}
                 </div>
                 <div id="listing-card-rating">
                     <BsFillStarFill className="verified"/>
@@ -64,7 +68,10 @@ export const SmallCard = () => {
                     <BsFillStarFill className="verified"/>
                     <BsFillStarFill className="verified"/>
                     <BsFillStarFill/>
-                    <BsTrash className="verified-delete" />
+                    <div className="verified-delete"><BsTrash  onClick={()=>{
+                        localStorage.setItem("tobe_deletde_id",item._id)
+                        dispatch(Delete(item._id));
+                    }}/></div>
               <BsPencil className="verified-edit" />
                 </div>
 
@@ -72,7 +79,7 @@ export const SmallCard = () => {
                 <div id="listing-card-viewership">
                     <BsFillEyeFill style={{marginRight:5,color:"#3270FC"}}/>
                    
-                    <span>Viewed - 645</span>
+                    <p>Viewed - 645</p>
 
              
                 </div>

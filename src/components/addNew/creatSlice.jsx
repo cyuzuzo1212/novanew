@@ -49,5 +49,20 @@ export const getAllListings = () => (dispatch) => {
   })
 }
 
+export const Delete = (id) => (dispatch) => {
+  const token = (localStorage.getItem("token"));
+  console.log(id);
+  axios({
+    method: "DELETE",
+    url: `https://blogapi-0jru.onrender.com/api/realEstates/${id}`,
+    Authorization: `Bearer ${token}`
+  }).then((res)=>{
+    console.log(res);
+    window.location.reload()
+  }).catch((err)=>{
+    console.log(err);
+  })
+}
+
 export const { list, getListings } = listSlice.actions;
 export default listSlice.reducer;
