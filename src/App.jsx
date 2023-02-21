@@ -8,7 +8,7 @@ import Products from './screens/Products';
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Mls from './screens/Mls';
-import { News } from './screens/News';
+import News  from './screens/News';
 import NewsMore from './screens/NewsMore';
 import Community from './screens/Communities';
 import Communities from './screens/Communities';
